@@ -1,0 +1,20 @@
+.ani {
+  animation-duration: 2s;
+  animation-fill-mode:forwards;
+}
+
+.fade-up {
+  opacity: 0;
+  animation-name: fadeUp;
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

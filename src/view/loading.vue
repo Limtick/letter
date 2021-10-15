@@ -7,7 +7,7 @@
         animate__rollOut: started
       }
     ]">小鸡给小马写信啦</h1>
-    <wired-card class="loading-card" @click="start">{{ loadingText }}</wired-card>
+    <wired-card :class="['loading-card', 'animate__animated', {'animate__fadeOut': started}]" @click="start">{{ loadingText }}</wired-card>
   </div>
 </template>
 
@@ -31,7 +31,7 @@ export default {
     updateLoading () {
       this.timer = setInterval(() => {
         this.i++
-        if (this.i > 15) {
+        if (this.i > 7) {
           clearInterval(this.timer)
           this.ready = true
         }
@@ -40,11 +40,12 @@ export default {
     start () {
       if (this.ready) {
         this.started = true
+        this.$parent.play()
         setTimeout(() => {
           this.$router.push({
             name: 'Letter'
           })
-        }, 1200)
+        }, 1000)
       }
     }
   },

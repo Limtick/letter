@@ -9,6 +9,7 @@
     "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
+    "@material/mwc-icon": "^0.25.1",
     "animate.css": "^4.1.1",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
