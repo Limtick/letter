@@ -98,10 +98,12 @@ export default {
 
 <style lang="scss" scoped>
 .letter {
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   padding: 20px;
-  padding-bottom: 90px;
   box-sizing: border-box;
   overflow: auto;
 }
