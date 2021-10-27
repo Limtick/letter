@@ -8,6 +8,9 @@
 </template>
 
 <script>
+import chicken from '@/assets/img/01.jpg'
+import horse from '@/assets/img/02.jpg'
+import flag from '@/assets/img/03.png'
 export default {
   name: 'TextBlock',
   props: {
@@ -16,9 +19,9 @@ export default {
   data () {
     return {
       imgs: {
-        j: '/letter/img/01.jpg',
-        m: '/letter/img/02.jpg',
-        g: '/letter/img/03.png'
+        j: chicken,
+        m: horse,
+        g: flag
       }
     }
   },
@@ -50,7 +53,7 @@ export default {
   border-radius: 10px;
   box-sizing: border-box;
   margin-bottom: 16px;
-  background: rgb(251, 217, 245, .8);
+  background: rgb(255, 255, 255, .6);
   box-shadow: rgb(47, 47, 47, .1) 0px 2px 5px 0px;
   span {
     font-size: 16px;

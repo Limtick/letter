@@ -61,7 +61,7 @@ export default {
     bottom: 0;
     right: -100px;
     transform: rotate(-15deg);
-    opacity: 0.6;
+    opacity: 0.8;
   }
 }
 .snow {
